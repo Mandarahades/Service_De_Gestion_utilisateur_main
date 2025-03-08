@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.badge {
+  padding: 0.05rem 0.25rem 0.05rem 0.25rem;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bg-danger {
+  background: #d9534f !important;
+}
+
+.bg-secondary {
+  background: #6c757d !important;
+}
+
+.gridanimation {
+  opacity: 1;
+  transform: translateX(100%);
+  transition: all 1s ease;
+}
+
+a:hover svg:first-child .gridanimation {
+  animation: grid 2s ease alternate infinite;
+}
+
+a:hover svg:first-child .gridanimation:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+a:hover svg:first-child .gridanimation:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+a:hover svg:first-child .gridanimation:nth-child(6) {
+  animation-delay: 0.9s;
+}
+
+@keyframes grid {
+  0% {
+    opacity: 0;
+    transform: translateX(-300%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
