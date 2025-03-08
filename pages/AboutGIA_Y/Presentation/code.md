@@ -1,6 +1,6 @@
 # DEPENDENCIES CONFIGURATION
 
-This guide provides instructions for installing all the necessary dependencies to enable Email notifications using JavaMail in the project.
+This guide provides instructions for installing all the necessary dependencies to enable using JavaMail in the project.
 
 ## Prerequisites
 
